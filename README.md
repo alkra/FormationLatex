@@ -10,23 +10,23 @@ La formation par les étudiants, pour les étudiants !
 **Mission sociale :**
     Améliorer les compétences des étudiants.
 
-**Stratégie : **
+**Stratégie :**
     Faciliter l'échange de compétences entre les étudiants, selon leur expertise de prédilection.
 
-**Plan d'action : **
+**Plan d'action :**
     Proposer des formations par des étudiants, pour les étudiants.
 
-**Performance : **
+**Performance :**
     Nombre de formations à l'année.
     Nombre de participants par formation.
     Nombre de participants uniques (pas toujours les mêmes).
     Nombre de formateurs uniques.
 
-**Résultat : **
+**Résultat :**
     Améliorer l'utilisation des logiciels.
     Améliorer les compétences des étudiants.
 
-**Impact : **
+**Impact :**
     Améliorer l'échange générationnel.
     Améliorer le réseau entre les participants.
     Gagner du temps
@@ -34,19 +34,19 @@ La formation par les étudiants, pour les étudiants !
 
 
 ## Arborescence
-**Présentation : **
+**Présentation :**
 Présentation d'ouverture à la formation.
 
  - build/presentation.pdf
  - src/presentation.tex
 
-**Formulaire d'enquête : **
+**Formulaire d'enquête :**
 Formulaire pour mesurer l'impact de la formation.
 
 - build/enquete_formation_latex.pdf
 - src/enquete_formation_latex.tex
 
-**Fichier guide : **
+**Fichier guide :**
 Ce fichier est le résultat attendu au terme de la formation.
 
 - build/initiation_a_latex.pdf
@@ -102,8 +102,11 @@ J'animerai alors une initiation Latex ce jeudi de 17h à 19h en L208/L209 (Capac
 Aucun prérequis nécessaire. Amenez simplement un ordinateur avec Latex installé.
 
 Sous windows : http://www.xm1math.net/doculatex/install_miktex.html
+
 Sous mac : http://www.xm1math.net/doculatex/install_mactex.html
+
 Sous ubuntu :  http://www.xm1math.net/doculatex/install_texlive_ubuntu.html
+
 
 
 Au programme :
