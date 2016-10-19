@@ -37,7 +37,7 @@
 				\transparent{0.1}\includegraphics[width=0.9\paperwidth,keepaspectratio]{images/ENSG_hall.jpg}}%
 			\vfill
 }}
-}
+} % Citer la source : tu ne l'as pas fait toi-même
 % Pour les logos
 \newcommand{\Logos}[2]{%
 \vspace{1cm}
@@ -65,11 +65,12 @@
 
 % Module pour inclure des algorithmes implémentés
 \usepackage{listingsutf8} % listings peut faire l'affaire. Celui ci gère mieux les problèmes d'encodage. Doit être chargé après babel
+% Oui, l'ordre de chargement est une difficulté de TeX/LaTeX
 \renewcommand{\lstlistingname}{Code} % Permet de modifier le mot utilisé dans la légende
 
 % Module pour régler les marges du document
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-
+% Mauvaise idée : http://tex.stackexchange.com/questions/71172/
 
 \begin{document}
 \AddToShipoutPicture*{\BackgroundPic} % Genere une image de fond

@@ -93,12 +93,19 @@ La référence est mise à jour automatiquement et est associée au label de mê
 		\caption{Format obj sans texture \label{format}}
 	\end{center}
 \end{figure}
-  
+
+% Très important les références, insiste bien dessus : donner un titre
+% aux flottants et y faire systématiquement référence dans le corps de
+% texte (à la section \ref{...}, dans la figure \ref{...}). Éviter les
+% ci-contre, ci-dessous : tu n'es pas censé maîtriser ton style.
+
 \section{Insérer un tableau}
 \begin{table}[!ht]
 	\begin{center}
 		\begin{tabular}{rl|c}
+          % \hline ? \textbf{Prénom} ?
 			Prenom & Nom      & Promotion \\
+          % \hline ?
 			Jean   & Aymare   & 2014      \\
 			Jean   & Peuplus  & 2015      \\
 			José  & Paledire & 2016      \\
@@ -125,6 +132,12 @@ Voici un exemple d'algorithme en pseudo code :
 	}
 	\caption{Bien suivre la formation}
 \end{algorithm}
+
+% Oui, ne te prends pas les pieds dans le tapis : le paquet pour
+% algorithmes est assez compliqué, et il vaut mieux dire de potasser
+% la doc que se lancer dans une grande explication ; je pense que ça
+% dépasse une initiation de 2h.
+
 \section{Insérer du code}
 L'option \emph{frame} permet de jouer sur la bordure.
 \begin{lstlisting}[language=Python, frame=L, caption={Une imprimante des premiers nombres},label=monImprimante]  % Start your code-block
@@ -155,13 +168,22 @@ def printer():
 \section{Insérer des formules mathematiques}
 Il est possible d'écrire des formules mathématiques intégrées dans le texte, comme \begin{math}(a-b)^2=a^2-2ab+b^2\end{math} ou en utilisant la notation condensée $(a+b)^2=a^2+2ab+b^2$.
 
+% Avertis tes ouailles : $ se tape \$ (cf. tex.stackexchange si
+% beaucoup de dollars et peu de maths : \catcode)
+
 De la même façon, il est possible de séparer les formules mathématiques pour les rendre plus visibles :
+
+% Les paragraphes doivent être séparés par une ligne vide ou de \par ;
+% si tu commences à utiliser des paquets moins bien programmés tu vas
+% le sentir passer.
+
 \begin{displaymath}
 	det \begin{pmatrix}
 	\alpha & \beta \\
 	\gamma & \delta
 	\end{pmatrix} = \alpha\delta - \gamma\beta 
 \end{displaymath} ou dans sa notation abrégée : 
+
 $$
 \begin{vmatrix} 
 	a & b \\
@@ -169,17 +191,23 @@ $$
 \end{vmatrix} = ad - cb
 $$
 
-On peut même utiliser une structure similaire à la précédente et qui permet de numéroter les équations : \begin{equation}
+On peut même utiliser une structure similaire à la précédente et qui permet de numéroter les équations :
+
+\begin{equation}
 \sin x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k+1)!}x^{2k+1}
 \end{equation}
+
 \begin{align*}
 	\int_a^b x^2 \, \mathrm dx & = {\lbrack \frac{x^3}{3} \rbrack}_a^b                     \\
 	                           & = \frac{b^3}{3} - \frac{a^3}{3}                           \\
 	                           & = \frac{b^3-a^3}{3} \numberthis \label{resultatIntegrale} 
 \end{align*}
+
 L'équation \eqref{resultatIntegrale} montre que le résultat de l'intégrale est calculable.
 
+% \LaTeX ? :P
 Latex génère aussi les flèches pour les vecteurs. Avec ça, on a quasiment tout ce qu'il nous faut pour faire des maths.
+
 $$
 \overrightarrow{\nabla }=\frac{\partial }{\partial x}\overrightarrow{i}+\frac{\partial }{\partial y}\overrightarrow{j}+\frac{\partial }{\partial z}
 \overrightarrow{k}
